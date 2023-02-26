@@ -77,6 +77,7 @@ span{
 }
 .nav ul{
     display: flex;
+
     list-style: none;
 }
 .nav a{
@@ -142,6 +143,7 @@ li> a:hover{
     min-height: 100vh;
     background-color: #3e3d3d;
     display: flex;
+    
     flex-direction: row;
     color: white;
     align-items: center;
@@ -192,6 +194,8 @@ li> a:hover{
     display: flex; 
     flex-direction: column;
     
+
+    
 }
 .edu h1{
     text-align: center;
@@ -201,6 +205,7 @@ li> a:hover{
 }
 .edu-list{
     display: flex;
+
 }
 .edu-list img{
     display: block;
@@ -210,6 +215,7 @@ li> a:hover{
     width: calc(100%/3);
     min-height: 300px;
     display: flex;
+
     flex-direction: column;
     align-items: center;
     text-align: justify;
@@ -242,6 +248,8 @@ li> a:hover{
     background-color:#3e3d3d;
     color: white;
     display: flex;
+    
+
     flex-direction: column;
     align-items: center;
 }
@@ -263,4 +271,70 @@ li> a:hover{
 }
 .ft-lg a{
     margin: 0 10px;
+}
+.nav-mb{
+    display: none;
+}
+
+/* ropensive============== */
+/* mobile */
+@media only  screen and (max-width:739px) {
+    .nav{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .text-nav input{
+        width: 90%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about img{
+        margin-left: 0;
+        width: 80%;
+        border-radius: 168px
+    }
+    .about .text{
+        margin-right: 30px;
+    }
+    .about .text button{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .edu{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 80px;
+    }
+    .edu h1{
+        display: block;
+        margin: 65px 0 80px 0;
+    }
+    .edu-list{
+        flex-direction: column;
+        width: 100%;
+    }
+    .edu-list .item{
+        width: 100%;
+    }
+    .edu-list .item2{
+        margin: 15px 0;
+    }
+    .footer{
+        min-height: 33vh;
+    }
+}
+
+/* tablet */
+@media only  screen and (min-width:739px) and (max-width:1023px) {
+    
+}
+
+
+/* pc */
+@media only  screen and (min-width:1024px) {
+    
 }
